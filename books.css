@@ -1,0 +1,353 @@
+@font-face {
+  font-family: garamond;
+  src: url("https://ols.wtf/rpgs/racheek/docs/garamond.ttf");
+}
+
+@font-face {
+  font-family: garamondi;
+  src: url("https://ols.wtf/rpgs/racheek/docs/garamondi.ttf");
+}
+
+:root {
+  --fg: #294530;
+  --bg: #faf0e6;
+  --accent: #7B0323;
+  --muted: rgba(41, 69, 48, 0.62);
+  --rule: rgba(41, 69, 48, 0.22);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: garamond, Garamond, Georgia, serif;
+  font-size: 1.15rem;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.page {
+  width: min(840px, calc(100% - 40px));
+  margin: 56px auto 80px;
+}
+
+.page-header {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+.site {
+  margin: 0 0 10px;
+  font-family: garamondi, Garamond, Georgia, serif;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+}
+
+.site a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.site a:hover,
+.site a:focus-visible {
+  color: var(--accent);
+}
+
+.page-header h1 {
+  margin: 0;
+  color: var(--fg);
+  font-size: clamp(2.8rem, 8vw, 5rem);
+  font-weight: normal;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.intro p {
+  margin: 0 0 1.1em;
+}
+
+.intro p:last-child {
+  margin-bottom: 0;
+}
+
+em, cite, i {
+  font-family: garamondi, Garamond, Georgia, serif;
+  font-style: italic;
+}
+
+.drop {
+  float: left;
+  margin: 0.04em -0.12em 0 0;
+  color: var(--accent);
+  font-size: 3.55rem;
+  font-weight: normal;
+  line-height: 0.72;
+}
+
+aside {
+  margin: 0 0 1.2em;
+  padding: 0.2em 0 0.2em 1em;
+  border-left: 2px solid var(--accent);
+  color: var(--accent);
+  font-family: garamondi, Garamond, Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.year-note {
+  margin: 0.6em 0 1em;
+}
+
+.load-error {
+  margin: 0 0 24px;
+  color: var(--accent);
+}
+
+.toolbar {
+  display: grid;
+  gap: 14px;
+  margin: 36px 0 28px;
+}
+
+.stats {
+  margin: 0;
+  color: var(--muted);
+  font-family: garamondi, Garamond, Georgia, serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.search input {
+  width: 100%;
+  min-height: 46px;
+  padding: 8px 14px;
+  border: 1px solid rgba(41, 69, 48, 0.35);
+  border-radius: 0;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  font-size: 1rem;
+}
+
+.search input::placeholder {
+  color: var(--muted);
+}
+
+.search input:focus-visible,
+.sort select:focus-visible,
+.filters button:focus-visible,
+.site a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.controls,
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.controls {
+  gap: 8px 16px;
+}
+
+.filters button,
+.sort select {
+  min-height: 42px;
+  padding: 7px 14px;
+  border: 1px solid rgba(41, 69, 48, 0.35);
+  border-radius: 0;
+  background: transparent;
+  color: var(--fg);
+  font: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  border-color: var(--fg);
+}
+
+.filters button[aria-pressed="true"] {
+  border-color: var(--fg);
+  background: var(--fg);
+  color: var(--bg);
+}
+
+.sort {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.sort select {
+  min-height: 38px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+
+.kanban {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: stretch;
+  margin: 0 0 28px;
+}
+
+.column {
+  height: 100%;
+  padding: 14px 16px 16px;
+  border: 1px solid var(--rule);
+}
+
+.column h3 {
+  margin: 0 0 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--accent);
+  font-size: 1.15rem;
+  font-variant: small-caps;
+  font-weight: normal;
+  letter-spacing: 0.04em;
+}
+
+.count {
+  color: var(--muted);
+  font-variant: normal;
+  letter-spacing: 0;
+}
+
+.book-list,
+.archive-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.book-list li,
+.archive-list li {
+  margin: 0 0 0.7em;
+}
+
+.book-list li:last-child,
+.archive-list li:last-child {
+  margin-bottom: 0;
+}
+
+.book-title {
+  font-weight: normal;
+}
+
+.book-author {
+  margin-left: 0.35em;
+  color: var(--muted);
+  font-family: garamondi, Garamond, Georgia, serif;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
+
+.review {
+  display: block;
+  margin-top: 0.2em;
+  color: var(--fg);
+  font-family: garamondi, Garamond, Georgia, serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.empty-column,
+.empty {
+  color: var(--muted);
+  font-family: garamondi, Garamond, Georgia, serif;
+}
+
+.empty {
+  margin: 32px 0;
+  text-align: center;
+}
+
+.finished-note {
+  margin: 0 0 36px;
+}
+
+.archive h2 {
+  margin: 0 0 12px;
+  font-size: 1.6rem;
+  font-variant: small-caps;
+  font-weight: normal;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+
+.archive h2::before {
+  content: "☙ ";
+}
+
+.archive h2::after {
+  content: " ❧";
+}
+
+.archive-intro {
+  margin: 0 0 28px;
+}
+
+.archive-year {
+  margin: 0 0 28px;
+}
+
+.archive-year h3 {
+  margin: 0 0 12px;
+  font-size: 1.25rem;
+  font-variant: small-caps;
+  font-weight: normal;
+}
+
+.archive-list li {
+  margin-bottom: 1em;
+}
+
+.audio-icon {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin: 0 0.15em;
+  background: currentColor;
+  vertical-align: -0.08em;
+  -webkit-mask: url("audio.svg") center / contain no-repeat;
+  mask: url("audio.svg") center / contain no-repeat;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: calc(100% - 32px);
+    margin: 36px auto 64px;
+  }
+
+  .drop {
+    font-size: 3rem;
+  }
+
+  .kanban {
+    grid-template-columns: 1fr;
+  }
+}
