@@ -1,0 +1,128 @@
+# Household reading list, taken from ols.wtf/books.html.
+# Add a book under queued, reading, paused or finished.
+# When a finished book has sat long enough, move it under archive for that year.
+# Optional fields: audio (true) and review (a one-line note).
+
+queued:
+  - title: Without Merit
+    author: Colleen Hoover
+
+reading:
+  - title: The Devils
+    author: Joe Abercrombie
+
+paused: []
+
+finished:
+  - title: The Other Wife
+    author: Michael Robotham
+  - title: Digital Fortress
+    author: Dan Brown
+  - title: Imposter Syndrome
+    author: Joseph Knox
+  - title: The Truth
+    author: Terry Pratchett
+
+archive:
+  - year: 2026
+    books:
+      - title: Toys
+        author: James Patterson
+      - title: Kissing England
+        author: Sean Thomas
+      - title: "Harry Potter and the Philosopher's Stone"
+        author: J. K. Rowling
+        audio: true
+      - title: "Guards! Guards!"
+        author: Terry Pratchett
+      - title: The Housemaid
+        author: Freida McFadden
+      - title: Quicksilver Twilight
+        author: Stan Nicholls
+      - title: Quicksilver Zenith
+        author: Stan Nicholls
+  - year: 2025
+    books:
+      - title: Reaper Man
+        author: Terry Pratchett
+      - title: The Night She Disappeared
+        author: Lisa Jewell
+      - title: The Love of My Life
+        author: Rosie Walsh
+      - title: Watching You
+        author: Lisa Jewell
+      - title: The List
+        author: Yomi Adegoke
+      - title: Murder Before Evensong
+        author: Richard Coles
+      - title: Quicksilver Rising
+        author: Stan Nicholls
+      - title: Citizen
+        author: Charlie Brooks
+        review: "Horses and espionage. An interesting premise, but I unfortunately saw the twist a mile off. Still entertaining though"
+      - title: In Too Deep
+        author: Lee Child
+        review: "My first Reacher novel, chosen because we were on holiday. I enjoyed it, but the series feels a bit overwhelming given there are like 100 books"
+      - title: A Foreign Country
+        author: Charles Cumming
+        review: Brilliant writing. I am going to be using this as a baseline for spy novels in the future
+      - title: Something Wicked This Way Comes
+        author: Ray Bradbury
+        review: "Sorry Martin and other literary purists. I didn't like this"
+      - title: Nighthawking
+        author: Russ Thomas
+        review: "The sequel to Firewatching. Just as good to be honest. I'll be checking out the rest of the series"
+      - title: Slow Horses
+        author: Mick Herron
+        review: This is one my mother bought for me. She knows I like a book like this so it was a dead cert
+      - title: "It's All About the Bike"
+        author: Robert Penn
+        review: I read this while I was recovering from a bike-hobby-ending injury. It made me really want a brand new bike. Proper interesting
+      - title: The Ministry of Time
+        author: Kaliane Bradley
+        review: "Such a clever concept of time travel. Perfect balance of love, action, and thought-provoking writing"
+      - title: All of us are Broken
+        author: Fiona Cummins
+        review: "Horrifying! Right until the ending and then it gets even worse. It starts with the worst bit, so the rest of the book is spent in dread of the events leading up. Really well-written"
+      - title: Genuine Fraud
+        author: E. Lockhart
+        review: "No idea where I found this one. Reckon we picked it up on holiday somewhere. Short but sweet, not much in terms of progression but not bad for a short book"
+      - title: Tomorrow and Tomorrow and Tomorrow
+        author: Gabrielle Zevin
+        review: Beautiful. Desparate to get Kayleigh to read this but not sure she will appreciate it
+      - title: The Switch
+        author: Lily Samson
+        review: "Read this on holiday. It got more and more farfetched as I read, wouldn't read it in my normal life but a good holiday brainrot read"
+      - title: How to Kidnap the Rich
+        author: Rahul Raina
+        review: This was so fun. A little wacky in places but honestly such an entertaining read
+      - title: Rivers of London
+        author: Ben Aaronovitch
+        review: "Another one from when I was younger. I never finished this the first time round, just didn't get into it. Much more successful this time round, will certainly be looking for the whole series"
+      - title: "16 Ways to Defend a Walled City"
+        author: K. J. Parker
+        review: "Loved this! I saw some reviews that the ending was disappointing but I disagree. This is part of a series and I'll definitely be on the lookout for them"
+      - title: Charmed Life
+        author: Diana Wynne Jones
+        review: "Re-read this from when I was a kid. Still just as magical but felt very dated. Won't be reading it to the kids"
+      - title: A Darker Shade of Magic
+        author: V. E. Schwab
+        review: "Loved the vibe of magic in this book, especially Kell's coat"
+      - title: Firewatching
+        author: Russ Thomas
+        review: "I don't normally go for a detective novel, but when I do they are always fantastic. Set in Sheffield, so gets extra points. Sequel queued!"
+  - year: 2024
+    books:
+      - title: The Left-Handed Booksellers of London
+        author: Garth Nix
+        review: "Really enjoy English folklore, so I adored this. Have the sequel in my sights, and then another is due for publication in 2026"
+      - title: Snuff
+        author: Terry Pratchett
+        audio: true
+        review: Perfect end to the Vimes arc
+      - title: A Popular History of Sheffield
+        author: J. Edward Vickers
+        review: "I am disgustingly ignorant of the history of my city, this went a good deal of the way to fix this"
+      - title: Rotherweird
+        author: Andrew Caldecott
+        review: "Weird. I didn't totally get on with it but I enjoyed a lot of the fantasy and alternative history elements"
